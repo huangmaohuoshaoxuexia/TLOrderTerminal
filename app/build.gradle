@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "tl.com.tlsl"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0.0"
+        manifestPlaceholders = [
+                GETUI_APP_ID : "3J5FLCYcDZ9KkqcjybQHL6",
+                GETUI_APP_KEY : "swnNE3Ilg48ovp89V5vxr",
+                GETUI_APP_SECRET : "74cS4ttXN69oONDUbzVXA3"
+        ]
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86_64"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    aaptOptions{
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    compile 'com.contrarywind:Android-PickerView:3.2.6'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
+    //Retrofit2所需要的包
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    //ConverterFactory的Gson依赖包
+    compile 'com.squareup.retrofit2:converter-scalars:2.0.0-beta4'
+    //ConverterFactory的String依赖包
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.3.1'
+    compile 'com.alibaba:fastjson:1.2.39'
+    compile 'com.jcodecraeer:xrecyclerview:1.5.9'
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.getui:sdk:2.11.1.0'
+
+        compile 'com.umeng.sdk:common:latest.integration'
+        compile 'com.umeng.sdk:analytics:latest.integration'
+    compile 'com.umeng.sdk:common:1.5.0'
+    compile 'com.umeng.sdk:analytics:7.5.0'
+}
