@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/title_back_color"
+        android:text="一级审核人"/>
+    <LinearLayout
+        android:id="@+id/select_auditor_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/team_text"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@mipmap/shade_bg3"
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            android:textColor="@color/color5"
+            android:paddingLeft="20dp"
+            android:text="曾春祥"/>
+    </LinearLayout>
+
+</LinearLayout>

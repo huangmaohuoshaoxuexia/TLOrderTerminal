@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tl.com.tlsl.weiget.SlidingButtonView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sale_order_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/copy_layout"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/copy_image"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:src="@mipmap/ic_replication" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="复制"
+                android:textColor="@color/color38"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/revoke_layout"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/revoke_image"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:src="@mipmap/ic_withdraw" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="撤单"
+                android:textColor="@color/color39"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/bottomframe2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="7dp">
+
+            <TextView
+                android:id="@+id/order_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:enabled="true"
+                android:singleLine="true"
+                android:text="订单号:"
+                android:textColor="@color/back"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/order_status"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="4"
+                android:background="@drawable/bg_my_style14"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/color30" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/dash_line2"
+            android:layerType="software" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="终端店名称"
+                android:textColor="@color/color31"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/terminal_name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="货品数量"
+                android:textColor="@color/color31"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="时间"
+                android:textColor="@color/color31"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/back"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/color29" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="备注"
+                android:textColor="@color/color31"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/memo"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:enabled="true"
+                android:gravity="right"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/back"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</tl.com.tlsl.weiget.SlidingButtonView>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/title_back_color"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2.8"
+        android:scaleType="fitStart"
+        android:src="@mipmap/ic_return" />
+
+    <TextView
+        android:id="@+id/title_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        android:textColor="@color/white"
+        android:text="选择审核人"/>
+    <LinearLayout
+        android:id="@+id/sale_title_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="@drawable/bg_my_style16"
+        android:layout_gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/ic_search2"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:inputType="textNoSuggestions"
+            android:hint="搜索内容"/>
+        <ImageView
+            android:id="@+id/x_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/ic_delete"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/sale_search_image"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2.6"
+
+        android:src="@mipmap/ic_search" />
+
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2.6"
+        android:gravity="center"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:background="@drawable/bg_my_style16"
+        android:textColor="@color/title_back_color"
+        android:text="搜索"
+        android:layout_marginLeft="10dp"
+        android:textSize="13sp" />
+</LinearLayout>
