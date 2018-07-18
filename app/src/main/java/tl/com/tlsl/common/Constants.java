@@ -4,7 +4,7 @@ package tl.com.tlsl.common;
 import android.support.v4.util.ArrayMap;
 import android.text.TextUtils;
 import android.util.Log;
-
+import tl.com.tlsl.BuildConfig;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
 import org.json.JSONObject;
@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 
+import tl.com.tlsl.BuildConfig;
 import tl.com.tlsl.model.entity.User;
 
 
@@ -26,8 +27,8 @@ public class Constants {
     public static String partner = "android";
     public static String key = "g91qycacimz75ony7atdqria2ck4w7i55c5x";
     public static String token = "",provinceId="",provinceName="",cityId="",cityName="",countyName="",countyId="",address="";
-
-    public static final String apiHead = "http://api.fat.tianlu56.com.cn/"; //研发环境
+    public static final String apiHead = BuildConfig.API_HOST;//开发环境
+    //public static final String apiHead = "http://api.fat.tianlu56.com.cn/"; //研发环境
 //    public static final String apiHead = "http://wmsapi.tianlu56.com.cn/";//生产环境
 
     //经销商登录
